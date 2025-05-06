@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+pymongo
+google-auth-oauthlib
+google-auth 
