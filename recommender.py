@@ -1,7 +1,7 @@
 import pandas as pd
 
-similarity_df = pd.read_pickle("steam_similarity_matrix.pkl")
-df_steam = pd.read_csv('steam.csv')
+similarity_df = pd.read_pickle("/Users/dhruvshah/Desktop/Blog/archive-3/project/steam_similarity_matrix.pkl")
+df_steam = pd.read_csv('/Users/dhruvshah/Desktop/Blog/archive-3/project/steam.csv')
 
 def get_content_based_recommendations(purchases, top_n=10):
     if len(purchases) == 0:

@@ -19,7 +19,7 @@ def main():
 
     if len(purchases) < 3:
         print("⚠️ Not enough purchases found. Using popularity algorithm instead.")
-        df = pd.read_csv('df_processed.csv')
+        df = pd.read_csv('/Users/dhruvshah/Desktop/Blog/archive-3/project/df_processed.csv')
         df['total_reviews'] = df['positive_ratings'] + df['negative_ratings']
         filtered_df = df[df['total_reviews'] >= 50]
         filtered_df['review_score'] = filtered_df['positive_ratings'] / filtered_df['total_reviews']
